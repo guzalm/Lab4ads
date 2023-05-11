@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 2: Adding private class HashNode" />
+    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 2: Adding private variable 'size'.">
+      <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683815955853</updated>
-      <workItem from="1683815957216" duration="1535000" />
+      <workItem from="1683815957216" duration="1896000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Creating public class MyHashTable">
       <created>1683822757143</created>
@@ -66,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683823523766</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Step 2: Adding private variable 'size'.">
+      <created>1683824033875</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683824033875</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +84,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Step 1: Creating public class MyHashTable" />
     <MESSAGE value="Step 2: Adding private class HashNode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 2: Adding private class HashNode" />
+    <MESSAGE value="Step 2: Adding private variable 'size'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 2: Adding private variable 'size'." />
   </component>
 </project>

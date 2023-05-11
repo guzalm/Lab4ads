@@ -1,4 +1,5 @@
-public class MyHashTable {
+public class MyHashTable<K, V> {
+
     private class HashNode<K, V> {
         K key;
         V value;
@@ -9,8 +10,17 @@ public class MyHashTable {
             this.value = value;
             this.next = null;
         }
-        private HashNode<K, V>[] table;
-        private int size;
+    }
 
+    private HashNode<K, V>[] table;
+    private int size;
+
+    public MyHashTable() {
+        this(16);
+    }
+
+    public MyHashTable(int M) {
+        table = new HashNode[M];
+        size = 0;
     }
 }
