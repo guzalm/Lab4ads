@@ -9,5 +9,8 @@ public class MyHashTable {
             this.value = value;
             this.next = null;
         }
+        private HashNode<K, V>[] table;
+        private int size;
+
     }
 }
