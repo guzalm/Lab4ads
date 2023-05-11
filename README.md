@@ -5,3 +5,5 @@ CREATING MyHashTable class:
    
    STEP 2: Adding private class HashNode<>. In a hash table, each node has a key of type K, a value of type V, and a link to the next node.
    The constructor initializes the node with key and value by word 'this' and sets the null value next to it.
+   
+   STEP 3: Variables 'size','table' are used to store the actual hash table and the number of elements currently stored in it.
