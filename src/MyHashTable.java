@@ -92,6 +92,18 @@ public class MyHashTable<K, V> {
             return value;
         }
     }
-
+    //Method checks if the hashtable contains the specified value.
+    public boolean contains(V value) {
+        for (int i = 0; i < table.length; i++) {
+            HashNode<K, V> curr = table[i];
+            while (curr != null) {
+                if (curr.value.equals(value)) {
+                    return true;
+                }
+                curr = curr.next;
+            }
+        }
+        return false;
+    }
 }
 

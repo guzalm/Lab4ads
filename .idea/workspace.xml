@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 7: Method V get() retrieve the value associated with a given key">
+    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 7: Method remove() deletes a key_value pair from the table when we put key.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683815955853</updated>
       <workItem from="1683815957216" duration="2307000" />
-      <workItem from="1683889257596" duration="2804000" />
+      <workItem from="1683889257596" duration="3505000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Creating public class MyHashTable">
       <created>1683822757143</created>
@@ -104,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683893814234</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Step 7: Method remove() deletes a key_value pair from the table when we put key.">
+      <created>1683894485693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683894485693</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +126,7 @@
     <MESSAGE value="Step 5: First created function called hash()" />
     <MESSAGE value="Step 6: Method put() which adds a key_value pair to the table by created new node if it does not exist" />
     <MESSAGE value="Step 7: Method V get() retrieve the value associated with a given key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 7: Method V get() retrieve the value associated with a given key" />
+    <MESSAGE value="Step 7: Method remove() deletes a key_value pair from the table when we put key." />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 7: Method remove() deletes a key_value pair from the table when we put key." />
   </component>
 </project>
