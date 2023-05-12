@@ -7,3 +7,5 @@ CREATING MyHashTable class:
    The constructor initializes the node with key and value by word 'this' and sets the null value next to it.
    
    STEP 3: Variables 'size','table' are used to store the actual hash table and the number of elements currently stored in it.
+   
+   STEP 4: We initialized the hash table with a default size of 16 and the hash table with a specified size M.
