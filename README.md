@@ -14,3 +14,5 @@ CREATING MyHashTable class:
    
    STEP 6: Creating of put() method used to insert a key-value pair into the hash table. This method first computes the hashcode of the key using the hash() method, which determines the index of the corresponding entry in the table array. If the entry at that index is empty, the method simply creates a new HashNode.
    
+   STEP 7: The get() method in the MyHashTable class is used to retrieve the value associated with a given key from the hash table.The method first computes the hash code of the key using the hash() method, which determines the index of the corresponding entry in the table array.
+   
