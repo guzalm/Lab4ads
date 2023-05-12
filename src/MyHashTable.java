@@ -105,5 +105,18 @@ public class MyHashTable<K, V> {
         }
         return false;
     }
+    //Returns the key associated with the specified value in the hashtable.
+    public K getKey(V value) {
+        for (int i = 0; i < table.length; i++) {
+            HashNode<K, V> curr = table[i];
+            while (curr != null) {
+                if (curr.value.equals(value)) {
+                    return curr.key;
+                }
+                curr = curr.next;
+            }
+        }
+        return null;
+    }
 }
 
