@@ -28,11 +28,13 @@ public class MyHashTable<K, V> {
         table = new HashNode[M];
         size = 0;
     }
+
     // Hash function that returns an index into the table for a given key
     private int hash(K key) {
         int index = key.hashCode() & (table.length - 1);
         return index;
     }
+
     // Method to add a key-value pair to the table
     public void put(K key, V value) {
         int index = hash(key); // Get the index for the key
@@ -56,6 +58,7 @@ public class MyHashTable<K, V> {
         }
         size++; // Increase the size of the table
     }
+
     // Method to get the value associated with a key
     public V get(K key) {
         int index = hash(key); // Get the index for the key
@@ -65,4 +68,30 @@ public class MyHashTable<K, V> {
         }
         return (curr == null) ? null : curr.value; // Return the value or null if the key is not found
     }
+    // Method to remove a key-value pair from the table
+    public V remove(K key) {
+        int index = hash(key);// Get the index for the key
+        HashNode<K, V> curr = table[index];
+        HashNode<K, V> prev = null;
+        while (curr != null && !curr.key.equals(key)) {
+            prev = curr;
+            curr = curr.next;
+        }
+        if (curr == null) {
+            // If the key is not found, return null
+            return null;
+        } else {
+            // If the key is found, remove the node from the linked list and return the value
+            V value = curr.value;
+            if (prev == null) {
+                table[index] = curr.next;
+            } else {
+                prev.next = curr.next;
+            }
+            size--;
+            return value;
+        }
+    }
+
 }
+

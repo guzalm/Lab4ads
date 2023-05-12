@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 6: Method put() which adds a key_value pair to the table by created new node if it does not exist">
+    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 7: Method V get() retrieve the value associated with a given key">
       <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683815955853</updated>
       <workItem from="1683815957216" duration="2307000" />
-      <workItem from="1683889257596" duration="2450000" />
+      <workItem from="1683889257596" duration="2804000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Creating public class MyHashTable">
       <created>1683822757143</created>
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683892196322</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Step 7: Method V get() retrieve the value associated with a given key">
+      <created>1683893814234</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683893814234</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +117,7 @@
     <MESSAGE value="Step 4: Default size of 16 and ash table with a specified size M." />
     <MESSAGE value="Step 5: First created function called hash()" />
     <MESSAGE value="Step 6: Method put() which adds a key_value pair to the table by created new node if it does not exist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 6: Method put() which adds a key_value pair to the table by created new node if it does not exist" />
+    <MESSAGE value="Step 7: Method V get() retrieve the value associated with a given key" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 7: Method V get() retrieve the value associated with a given key" />
   </component>
 </project>
