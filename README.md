@@ -18,3 +18,5 @@ CREATING MyHashTable class:
    
    Step 8: Method remove() deletes a key_value pair from the table when we put key. If the entry at that index is null, it means there is no such key-value pair in the hash table, so the method returns null. If the entry is not null, the method find the HashNode with the matching key. After removing, size of table decreases.
    
+   STEP 9: The contains() method searches the hashtable for a given value. If the value is found, it returns true. If it is not found after searching the entire hashtable, it returns false.
+   
