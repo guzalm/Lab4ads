@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 4: Default size of 16 and ash table with a specified size M.">
+    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 5: First created function called hash()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
     </list>
@@ -54,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683815955853</updated>
       <workItem from="1683815957216" duration="2307000" />
-      <workItem from="1683889257596" duration="102000" />
+      <workItem from="1683889257596" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Creating public class MyHashTable">
       <created>1683822757143</created>
@@ -84,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683824474001</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Step 5: First created function called hash()">
+      <created>1683890258459</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683890258459</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +102,7 @@
     <MESSAGE value="Step 2: Adding private class HashNode" />
     <MESSAGE value="Step 2: Adding private variable 'size'." />
     <MESSAGE value="Step 4: Default size of 16 and ash table with a specified size M." />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 4: Default size of 16 and ash table with a specified size M." />
+    <MESSAGE value="Step 5: First created function called hash()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 5: First created function called hash()" />
   </component>
 </project>

@@ -30,7 +30,30 @@ public class MyHashTable<K, V> {
     }
     // Hash function that returns an index into the table for a given key
     private int hash(K key) {
-        int hashCode = key.hashCode() % table.length;
-        return (hashCode < 0) ? hashCode + table.length : hashCode;
+        int index = key.hashCode() & (table.length - 1);
+        return index;
+    }
+    // Method to add a key-value pair to the table
+    public void put(K key, V value) {
+        int index = hash(key); // Get the index for the key
+        HashNode<K, V> node = new HashNode<>(key, value); // Create a new node with the key-value pair
+        if (table[index] == null) {
+            // If there's no node at the index, add the new node
+            table[index] = node;
+        } else {
+            // If there's already a node at the index, add the new node to the end of the linked list
+            HashNode<K, V> curr = table[index];
+            while (curr.next != null && !curr.key.equals(key)) {
+                curr = curr.next;
+            }
+            if (curr.key.equals(key)) {
+                // If the key is already in the list, update the value
+                curr.value = value;
+            } else {
+                // If the key is not in the list, add the new node to the end
+                curr.next = node;
+            }
+        }
+        size++; // Increase the size of the table
     }
 }
