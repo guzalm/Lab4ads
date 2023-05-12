@@ -5,4 +5,11 @@ public class MyTestingClass {
         this.id = id; // constructor that initializes the id field with the passed value
         this.name = name; // constructor that initializes the name field with the passed value
     }
+    public int getId() {
+        return id; // method that returns the id value of the object
+    }
+
+    public String getName() {
+        return name; // method that returns the name value of the object
+    }
 }
