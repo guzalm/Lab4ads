@@ -22,3 +22,7 @@ CREATING MyHashTable class:
    
    STEP 10: The getkey() method retrieves the key associated with a given value in the hashtable. If it finds a matching node, it returns the key associated with that node. If it does not find a matching node after searching the entire hashtable, it returns null.
    
+   CREATING MyTestingClass:
+   
+     STEP 11: In new created class I have put here private integer field to store the id of the object and private string field to store the name of the object. After was created function MyTestingClass where I added constructor that initializes the id field with the passed value and another one that initializes the name field with the passed value
+   
