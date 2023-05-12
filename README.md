@@ -20,3 +20,5 @@ CREATING MyHashTable class:
    
    STEP 9: The contains() method searches the hashtable for a given value. If the value is found, it returns true. If it is not found after searching the entire hashtable, it returns false.
    
+   STEP 10: The getkey() method retrieves the key associated with a given value in the hashtable. If it finds a matching node, it returns the key associated with that node. If it does not find a matching node after searching the entire hashtable, it returns null.
+   
