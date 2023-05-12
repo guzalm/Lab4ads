@@ -9,3 +9,5 @@ CREATING MyHashTable class:
    STEP 3: Variables 'size','table' are used to store the actual hash table and the number of elements currently stored in it.
    
    STEP 4: We initialized the hash table with a default size of 16 and the hash table with a specified size M.
+   
+   STEP 5: Creating of Hash function that returns an index into the table for a given key.
