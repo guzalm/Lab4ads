@@ -24,5 +24,6 @@ CREATING MyHashTable class:
    
    CREATING MyTestingClass:
    
-     STEP 11: In new created class I have put here private integer field to store the id of the object and private string field to store the name of the object. After was created function MyTestingClass where I added constructor that initializes the id field with the passed value and another one that initializes the name field with the passed value
+     STEP 11: In new created class I have put here private integer field to store the id of the object and private string field to store the name of the object. After was created function MyTestingClass where I added constructor that initializes the id field with the passed value and another one that initializes the name field with the passed value.
+     Step 12: Creating of new 2 methods as getId() and getName(), which returns id and name of the object. Also, I put int near to id and string to name due to characters which they usually contain.
    
