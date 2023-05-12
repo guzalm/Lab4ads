@@ -56,4 +56,13 @@ public class MyHashTable<K, V> {
         }
         size++; // Increase the size of the table
     }
+    // Method to get the value associated with a key
+    public V get(K key) {
+        int index = hash(key); // Get the index for the key
+        HashNode<K, V> curr = table[index];
+        while (curr != null && !curr.key.equals(key)) {
+            curr = curr.next;
+        }
+        return (curr == null) ? null : curr.value; // Return the value or null if the key is not found
+    }
 }
