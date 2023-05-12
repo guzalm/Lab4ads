@@ -16,3 +16,5 @@ CREATING MyHashTable class:
    
    STEP 7: The get() method in the MyHashTable class is used to retrieve the value associated with a given key from the hash table.The method first computes the hash code of the key using the hash() method, which determines the index of the corresponding entry in the table array.
    
+   Step 8: Method remove() deletes a key_value pair from the table when we put key. If the entry at that index is null, it means there is no such key-value pair in the hash table, so the method returns null. If the entry is not null, the method find the HashNode with the matching key. After removing, size of table decreases.
+   
