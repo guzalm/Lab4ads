@@ -1,122 +1,94 @@
+import java.util.Arrays;
+import java.util.LinkedList;
+
 public class MyHashTable<K, V> {
 
-    // Inner class to represent a node in the linked list
-    private class HashNode<K, V> {
-        K key;
-        V value;
-        HashNode<K, V> next;
+    private LinkedList<Entry<K, V>>[] table;
+    private int size;
 
-        public HashNode(K key, V value) {
-            this.key = key;
-            this.value = value;
-            this.next = null;
+    public MyHashTable() {
+        table = new LinkedList[16]; // Initialize table with an array of 16 linked lists
+        for (int i = 0; i < table.length; i++) {
+            table[i] = new LinkedList<Entry<K, V>>(); // Initialize each linked list in the array
+        }
+        size = 0; // Initialize size to zero
+    }
+
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public void put(K key, V value) {
+        if (key == null) {
+            return;
+        }
+        int index = getIndex(key); // Get the index of the bucket where the key-value pair should be stored
+        LinkedList<Entry<K, V>> bucket = table[index]; // Get the linked list (bucket) at the index
+        for (Entry<K, V> entry : bucket) { // Check if the key already exists in the bucket
+            if (entry.key.equals(key)) {
+                entry.value = value; // Update the value if the key already exists
+                return;
+            }
+        }
+        bucket.add(new Entry<K, V>(key, value)); // Add a new entry if the key does not already exist
+        size++;
+    }
+
+    public V get(K key) {
+        if (key == null) {
+            return null;
+        }
+        int index = getIndex(key); // Get the index of the bucket where the key-value pair should be stored
+        LinkedList<Entry<K, V>> bucket = table[index]; // Get the linked list (bucket) at the index
+        for (Entry<K, V> entry : bucket) { // Iterate through the entries in the bucket
+            if (entry.key.equals(key)) {
+                return entry.value; // Return the value if the key is found
+            }
+        }
+        return null; // Return null if the key is not found
+    }
+
+    public void remove(K key) {
+        if (key == null) {
+            return;
+        }
+        int index = getIndex(key); // Get the index of the bucket where the key-value pair should be stored
+        LinkedList<Entry<K, V>> bucket = table[index]; // Get the linked list (bucket) at the index
+        for (Entry<K, V> entry : bucket) { // Iterate through the entries in the bucket
+            if (entry.key.equals(key)) {
+                bucket.remove(entry); // Remove the entry if the key is found
+                size--;
+                return;
+            }
         }
     }
 
-    // The array to hold the table of nodes
-    private HashNode<K, V>[] table;
-    // The number of elements in the table
-    private int size;
-
-    // Default constructor that creates a table with 16 buckets
-    public MyHashTable() {
-        this(16);
-    }
-
-    // Constructor that creates a table with the specified number of buckets
-    public MyHashTable(int M) {
-        table = new HashNode[M];
-        size = 0;
-    }
-
-    // Hash function that returns an index into the table for a given key
-    private int hash(K key) {
-        int index = key.hashCode() & (table.length - 1);
+    private int getIndex(K key) {
+        int hashCode = key.hashCode(); // Get the hash code of the key
+        int index = hashCode % table.length; // Compute the index by taking the remainder of the hash code divided by the length of the array
         return index;
     }
 
-    // Method to add a key-value pair to the table
-    public void put(K key, V value) {
-        int index = hash(key); // Get the index for the key
-        HashNode<K, V> node = new HashNode<>(key, value); // Create a new node with the key-value pair
-        if (table[index] == null) {
-            // If there's no node at the index, add the new node
-            table[index] = node;
-        } else {
-            // If there's already a node at the index, add the new node to the end of the linked list
-            HashNode<K, V> curr = table[index];
-            while (curr.next != null && !curr.key.equals(key)) {
-                curr = curr.next;
-            }
-            if (curr.key.equals(key)) {
-                // If the key is already in the list, update the value
-                curr.value = value;
-            } else {
-                // If the key is not in the list, add the new node to the end
-                curr.next = node;
-            }
+    private static class Entry<K, V> {
+
+        private K key;
+        private V value;
+
+        public Entry(K key, V value) {
+            this.key = key;
+            this.value = value;
         }
-        size++; // Increase the size of the table
     }
 
-    // Method to get the value associated with a key
-    public V get(K key) {
-        int index = hash(key); // Get the index for the key
-        HashNode<K, V> curr = table[index];
-        while (curr != null && !curr.key.equals(key)) {
-            curr = curr.next;
-        }
-        return (curr == null) ? null : curr.value; // Return the value or null if the key is not found
-    }
-    // Method to remove a key-value pair from the table
-    public V remove(K key) {
-        int index = hash(key);// Get the index for the key
-        HashNode<K, V> curr = table[index];
-        HashNode<K, V> prev = null;
-        while (curr != null && !curr.key.equals(key)) {
-            prev = curr;
-            curr = curr.next;
-        }
-        if (curr == null) {
-            // If the key is not found, return null
-            return null;
-        } else {
-            // If the key is found, remove the node from the linked list and return the value
-            V value = curr.value;
-            if (prev == null) {
-                table[index] = curr.next;
-            } else {
-                prev.next = curr.next;
-            }
-            size--;
-            return value;
-        }
-    }
-    //Method checks if the hashtable contains the specified value.
-    public boolean contains(V value) {
+    public void printBucketSize() {
+        int[] sizes = new int[table.length]; // Create an array to store the sizes of each bucket
         for (int i = 0; i < table.length; i++) {
-            HashNode<K, V> curr = table[i];
-            while (curr != null) {
-                if (curr.value.equals(value)) {
-                    return true;
-                }
-                curr = curr.next;
-            }
+            sizes[i] = table[i].size(); // Get the size of each bucket and store it in the array
         }
-        return false;
-    }
-    //Returns the key associated with the specified value in the hashtable.
-    public K getKey(V value) {
-        for (int i = 0; i < table.length; i++) {
-            HashNode<K, V> curr = table[i];
-            while (curr != null) {
-                if (curr.value.equals(value)) {
-                    return curr.key;
-                }
-                curr = curr.next;
-            }
-        }
-        return null;
+        System.out.println("Bucket sizes: " + Arrays.toString(sizes));
     }
 }
-
