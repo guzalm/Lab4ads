@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 13: Creating of method hashCode(). Here we put general formula like how to calculate hash of key value">
-      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyTestingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyTestingClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 14:Full MyHashTable class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +60,7 @@
       <workItem from="1683948689820" duration="2681000" />
       <workItem from="1683952238305" duration="735000" />
       <workItem from="1683963809342" duration="2292000" />
-      <workItem from="1684049222596" duration="1698000" />
+      <workItem from="1684049222596" duration="2058000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Creating public class MyHashTable">
       <created>1683822757143</created>
@@ -159,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683901862560</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Step 14:Full MyHashTable class">
+      <created>1684054286328</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684054286328</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +180,7 @@
     <MESSAGE value="Step 11: I created new class MyTestingClass and put here objects, created MyTestingClass() method where initialize id and name." />
     <MESSAGE value="Step 12: creating of new 2 methods as getId() and getName(), which returns id and name of the object" />
     <MESSAGE value="Step 13: Creating of method hashCode(). Here we put general formula like how to calculate hash of key value" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 13: Creating of method hashCode(). Here we put general formula like how to calculate hash of key value" />
+    <MESSAGE value="Step 14:Full MyHashTable class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 14:Full MyHashTable class" />
   </component>
 </project>

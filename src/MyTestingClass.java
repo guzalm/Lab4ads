@@ -1,7 +1,6 @@
 import java.util.Objects;
 
 public class MyTestingClass {
-
     private int id;
 
     public MyTestingClass(int id) {
@@ -12,6 +11,7 @@ public class MyTestingClass {
         return id;
     }
 
+    // Overriding hashCode method to generate unique hash codes for objects
     @Override
     public int hashCode() {
         int result = 17;
@@ -19,6 +19,7 @@ public class MyTestingClass {
         return result;
     }
 
+    // Overriding equals method to compare objects for equality based on their id
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -27,6 +28,7 @@ public class MyTestingClass {
         return id == that.id;
     }
 
+    // Overriding toString method to return string representation of the object
     @Override
     public String toString() {
         return "MyTestingClass{" +
