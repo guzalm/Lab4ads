@@ -91,4 +91,11 @@ public class MyHashTable<K, V> {
         }
         System.out.println("Bucket sizes: " + Arrays.toString(sizes));
     }
+    public void putAll(MyHashTable<K, V> otherHashTable) {
+        for (LinkedList<Entry<K, V>> bucket : otherHashTable.table) {
+            for (Entry<K, V> entry : bucket) {
+                put(entry.key, entry.value);
+            }
+        }
+    }
 }

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 14:Full MyHashTable class" />
+    <list default="true" id="57310865-f775-451a-b204-19bd567c467b" name="Changes" comment="Step 16:Full created Student class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/acer/Downloads/RegistrationApp2/src/main/resources/com/example/registrationapp2/assignment 4 lab&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -60,7 +64,15 @@
       <workItem from="1683948689820" duration="2681000" />
       <workItem from="1683952238305" duration="735000" />
       <workItem from="1683963809342" duration="2292000" />
-      <workItem from="1684049222596" duration="2058000" />
+      <workItem from="1684049222596" duration="2399000" />
+      <workItem from="1684073145312" duration="257000" />
+      <workItem from="1684078608036" duration="183000" />
+      <workItem from="1684081744353" duration="3000" />
+      <workItem from="1684412419154" duration="15000" />
+      <workItem from="1684416522001" duration="509000" />
+      <workItem from="1684418184513" duration="82000" />
+      <workItem from="1684508962582" duration="6000" />
+      <workItem from="1684551719640" duration="3399000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Creating public class MyHashTable">
       <created>1683822757143</created>
@@ -160,7 +172,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684054286328</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Step 15:Full MyTestingClass class">
+      <created>1684054407127</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684054407127</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Step 16:Full Main class">
+      <created>1684054446217</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684054446217</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Step 16:Full created Student class">
+      <created>1684054556082</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684054556082</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +214,9 @@
     <MESSAGE value="Step 12: creating of new 2 methods as getId() and getName(), which returns id and name of the object" />
     <MESSAGE value="Step 13: Creating of method hashCode(). Here we put general formula like how to calculate hash of key value" />
     <MESSAGE value="Step 14:Full MyHashTable class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 14:Full MyHashTable class" />
+    <MESSAGE value="Step 15:Full MyTestingClass class" />
+    <MESSAGE value="Step 16:Full Main class" />
+    <MESSAGE value="Step 16:Full created Student class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 16:Full created Student class" />
   </component>
 </project>
